@@ -134,7 +134,9 @@ foreach($template in $templates)
 
   [xml]$xml = $template.GetXML()
   
+  #main work item properties
   $parent_properties = $xml.ObjectTemplate.Property
+  #all child work item properties
   $top_objects = $xml.ObjectTemplate.Object
  
   $IR = $false
